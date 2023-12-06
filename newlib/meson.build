@@ -33,7 +33,7 @@
 # OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 subdir('libc')
-subdir('libm')
+# subdir('libm')
 
 libnames = ['cpart', 'mpart']
 
@@ -77,13 +77,13 @@ foreach target : targets
 				      c_args: value[1] + c_args)
 
   set_variable('lib_c' + target, local_lib_c_target)
-  static_library(libm_name,
-		 ['empty.c'],
-		 install : true,
-		 install_dir : instdir,
-		 pic: false,
-                 c_args: value[1] + c_args,
-		 objects : [])
+  # static_library(libm_name,
+	# 	 ['empty.c'],
+	# 	 install : true,
+	# 	 install_dir : instdir,
+	# 	 pic: false,
+  #                c_args: value[1] + c_args,
+	# 	 objects : [])
   static_library(libg_name,
 		 ['empty.c'],
 		 install : true,
@@ -104,5 +104,5 @@ endforeach
 
 if enable_tests
   subdir('testsuite')
-  subdir('libm/test')
+  # subdir('libm/test')
 endif
