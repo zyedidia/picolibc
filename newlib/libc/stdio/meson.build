@@ -72,7 +72,7 @@ general_srcs_stdio = [
   'gets.c',
   'makebuf.c',
   'perror.c',
-  'printf.c',
+  # 'printf.c',
   'putc.c',
   'putchar.c',
   'putc_u.c',
@@ -82,7 +82,7 @@ general_srcs_stdio = [
   'remove.c',
   'rewind.c',
   'rget.c',
-  'scanf.c',
+  # 'scanf.c',
   'sccl.c',
   'setbuf.c',
   'setbuffer.c',
@@ -99,37 +99,37 @@ general_srcs_stdio = [
   'wbufw.c',
   'snprintf.c',
   'sprintf.c',
-  'sscanf.c',
+  # 'sscanf.c',
   'stdio.c',
   'tmpfile.c',
   'tmpnam.c',
   'ungetc.c',
-  'vdprintf.c',
-  'vprintf.c',
-  'vscanf.c',
-  'vsnprintf.c',
-  'vsprintf.c',
-  'vsscanf.c',
+  # 'vdprintf.c',
+  # 'vprintf.c',
+  # 'vscanf.c',
+  # 'vsnprintf.c',
+  # 'vsprintf.c',
+  # 'vsscanf.c',
   'wbuf.c',
   'wsetup.c',
 ]
 
 general_int_srcs_stdio = [
-  'fiprintf.c',
-  'fiscanf.c',
-  'iprintf.c',
-  'iscanf.c',
-  'siprintf.c',
-  'siscanf.c',
-  'sniprintf.c',
-  'vdiprintf.c',
-  'vfprintf.c',
-  'vfwprintf.c',
-  'viprintf.c',
-  'viscanf.c',
-  'vsiprintf.c',
-  'vsiscanf.c',
-  'vsniprintf.c',
+  # 'fiprintf.c',
+  # 'fiscanf.c',
+  # 'iprintf.c',
+  # 'iscanf.c',
+  # 'siprintf.c',
+  # 'siscanf.c',
+  # 'sniprintf.c',
+  # 'vdiprintf.c',
+  # 'vfprintf.c',
+  # 'vfwprintf.c',
+  # 'viprintf.c',
+  # 'viscanf.c',
+  # 'vsiprintf.c',
+  # 'vsiscanf.c',
+  # 'vsniprintf.c',
 ]
 
 if newlib_nano_formatted_io == false
@@ -137,19 +137,19 @@ if newlib_nano_formatted_io == false
 endif
 
 elix_2_int_srcs_stdio = [
-  'asiprintf.c',
-  'vasiprintf.c',
+  # 'asiprintf.c',
+  # 'vasiprintf.c',
 ]
 
 elix_2_srcs_stdio = [
-  'asprintf.c',
+  # 'asprintf.c',
   'fcloseall.c',
   'fseeko.c',
   'ftello.c',
   'getw.c',
   'mktemp.c',
   'putw.c',
-  'vasprintf.c',
+  # 'vasprintf.c',
 ]
 
 if newlib_nano_formatted_io == false
@@ -163,9 +163,9 @@ elix_4_int_srcs_stdio = [
 ]
 
 elix_4_srcs_stdio = [
-  'asnprintf.c',
+  # 'asnprintf.c',
   'clearerr_u.c',
-  'dprintf.c',
+  # 'dprintf.c',
   'feof_u.c',
   'ferror_u.c',
   'fflush_u.c',
@@ -202,16 +202,16 @@ elix_4_srcs_stdio = [
   'putwchar.c',
   'putwchar_u.c',
   'stdio_ext.c',
-  'swprintf.c',
+  # 'swprintf.c',
   'swscanf.c',
   'ungetwc.c',
-  'vasnprintf.c',
-  'vswprintf.c',
-  'vswscanf.c',
-  'vwprintf.c',
-  'vwscanf.c',
-  'wprintf.c',
-  'wscanf.c',
+  # 'vasnprintf.c',
+  # 'vswprintf.c',
+  # 'vswscanf.c',
+  # 'vwprintf.c',
+  # 'vwscanf.c',
+  # 'wprintf.c',
+  # 'wscanf.c',
 ]
 
 if newlib_nano_formatted_io == false

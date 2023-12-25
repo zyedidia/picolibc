@@ -164,26 +164,26 @@ srcs_stdlib = [
 ]
 
 srcs_stdlib_stdio = [
-    'dtoa.c',
-    'ecvtbuf.c',
-    'efgcvt.c',
-    'gdtoa-gethex.c',
-    'gdtoa-hexnan.c',
-    'mprec.c',
-    'strtod.c',
-    'strtodg.c',
-    'strtol.c',
-    'strtoul.c',
-    'strtoll.c',
-    'strtoull.c',
-    'strtoimax.c',
-    'strtoumax.c',
+    # 'dtoa.c',
+    # 'ecvtbuf.c',
+    # 'efgcvt.c',
+    # 'gdtoa-gethex.c',
+    # 'gdtoa-hexnan.c',
+    # 'mprec.c',
+    # 'strtod.c',
+    # 'strtodg.c',
+    # 'strtol.c',
+    # 'strtoul.c',
+    # 'strtoll.c',
+    # 'strtoull.c',
+    # 'strtoimax.c',
+    # 'strtoumax.c',
 ]
 
 lsrcs_stdlib = [
-  'strtold.c',
-  'strtorx.c',
-  'wcstold.c'
+  # 'strtold.c',
+  # 'strtorx.c',
+  # 'wcstold.c'
 ]
 
 if not tinystdio
