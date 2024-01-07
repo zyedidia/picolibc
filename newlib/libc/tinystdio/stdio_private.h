@@ -472,6 +472,7 @@ _u128_oflow(_u128 a)
 }
 #endif
 
+#ifndef GENERAL_REGS_ONLY
 #if __SIZEOF_LONG_DOUBLE__ > 8
 static inline _u128
 asuintld(long double f)
@@ -553,6 +554,7 @@ aslongdouble(uint32_t i)
     return v.f;
 }
 #endif
+#endif // GENERAL_REGS_ONLY
 
 static inline bool
 _u128_gt(_u128 a, _u128 b)
