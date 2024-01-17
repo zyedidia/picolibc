@@ -40,15 +40,11 @@ static char read_buf[BUFSIZ];
 
 static struct __file_bufio __stdin = FDEV_SETUP_POSIX(0, read_buf, BUFSIZ, __SRD, 0);
 static struct __file_bufio __stdout = FDEV_SETUP_POSIX(1, write_buf, BUFSIZ, __SWR, __BLBF);
+static struct __file_bufio __stderr = FDEV_SETUP_POSIX(2, write_buf, BUFSIZ, __SWR, __BLBF);
 
 FILE *const __posix_stdin = &__stdin.xfile.cfile.file;
 FILE *const __posix_stdout = &__stdout.xfile.cfile.file;
-
-#ifdef __strong_reference
-__strong_reference(__posix_stdout, __posix_stderr);
-#else
-FILE *const __posix_stderr = &__stdout.xfile.cfile.file;
-#endif
+FILE *const __posix_stderr = &__stderr.xfile.cfile.file;
 
 __weak_reference(__posix_stdin,stdin);
 __weak_reference(__posix_stdout,stdout);
