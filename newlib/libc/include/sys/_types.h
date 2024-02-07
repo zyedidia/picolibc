@@ -54,9 +54,7 @@ SUCH DAMAGE.
 /* The Arm Compiler doesn't define wint_t as part of stddef.h so
  * define it here.
  */
-#if defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6100100)
 typedef __WINT_TYPE__ wint_t;
-#endif
 
 #include <newlib.h>
 #include <sys/config.h>
