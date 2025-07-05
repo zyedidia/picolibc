@@ -34,8 +34,6 @@
 #
 
 srcs_machine_common = [
-  'memcpy.S',
-  'memset.S',
   'setjmp.S',
 ]
 
